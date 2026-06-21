@@ -282,8 +282,6 @@
       btn.classList.add('active');
       activeType = btn.getAttribute('data-type');
       updatePlaceholder();
-      var label = translations[currentLang]['tab_' + activeType] || activeType;
-      showToast(currentLang === 'id' ? ('Beralih ke mode ' + label) : ('Switched to ' + label + ' mode'), 'success');
     });
   });
 
