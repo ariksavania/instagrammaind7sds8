@@ -24,6 +24,28 @@
   <style>
     /* Critical utility — controls show/hide via JavaScript */
     .hidden { display: none !important; }
+
+    /* Fallback layout to prevent browser CSS caching from breaking desktop view */
+    .input-field-wrapper {
+      display: contents;
+    }
+    @media (max-width: 600px) {
+      .input-field-wrapper {
+        display: flex;
+        align-items: center;
+        background: rgba(6, 9, 17, 0.85);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 6px;
+        position: relative;
+        transition: var(--transition-smooth);
+        width: 100%;
+      }
+    }
+    /* Permanently hide all toast notifications */
+    .toast-container {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
