@@ -474,6 +474,15 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
 }
 
+.input-field-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+
 .input-icon {
   padding: 0 12px 0 16px;
   color: var(--text-muted);
@@ -1654,33 +1663,58 @@ h1, h2, h3, h4, h5 {
   .downloader-input-container {
     flex-direction: column;
     align-items: stretch;
-    gap: 10px;
+    gap: 12px;
     background: transparent;
     border: none;
     padding: 0;
+    box-shadow: none;
   }
   
-  /* Kolom Input Utama */
-  .url-input {
-    background: rgba(6, 9, 17, 0.8);
+  .input-field-wrapper {
+    display: flex;
+    align-items: center;
+    background: rgba(6, 9, 17, 0.85);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 14px 16px 14px 44px;
-    width: 100%;
+    border-radius: 14px;
+    padding: 6px;
+    position: relative;
+    transition: var(--transition-smooth);
   }
   
-  /* Posisikan ulang ikon rantai di dalam input */
-  .input-icon {
-    position: absolute;
-    left: 0;
-    top: 15px;
-    pointer-events: none;
+  .input-field-wrapper:focus-within {
+    border-color: var(--cyan-neon);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
   }
 
-  /* Baris kontrol (Tombol Tempel & Hapus) */
+  .url-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    padding: 12px 0;
+    min-width: 0;
+  }
+  
+  .input-icon {
+    position: static;
+    padding: 0 10px 0 14px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+  }
+
   .input-controls {
-    justify-content: flex-end;
-    margin-right: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 4px;
+  }
+  
+  .ctrl-btn {
+    padding: 8px 12px;
+    border-radius: 8px;
   }
 
   /* Tombol Download menjadi lebar penuh di bawah input agar mudah ditekan */
