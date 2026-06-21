@@ -1608,3 +1608,88 @@ h1, h2, h3, h4, h5 {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   margin: 0;
 }
+
+/* --- PERBAIKAN TAMPILAN MOBILE/SELULER --- */
+@media (max-width: 600px) {
+  /* 1. Kurangi padding container utama agar konten lebih luas */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* 2. Sesuaikan Header & Navigasi */
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    gap: 16px;
+    overflow-x: auto;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 4px;
+  }
+  
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  /* 3. Perkecil ukuran font Hero Title */
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+
+  /* 4. Kurangi padding card agar ruang input lebih luas */
+  .downloader-card-wrapper {
+    padding: 16px;
+  }
+
+  /* 5. Susun ulang bilah input agar nyaman ditekan di HP */
+  .downloader-input-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  /* Kolom Input Utama */
+  .url-input {
+    background: rgba(6, 9, 17, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 14px 16px 14px 44px;
+    width: 100%;
+  }
+  
+  /* Posisikan ulang ikon rantai di dalam input */
+  .input-icon {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    pointer-events: none;
+  }
+
+  /* Baris kontrol (Tombol Tempel & Hapus) */
+  .input-controls {
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+
+  /* Tombol Download menjadi lebar penuh di bawah input agar mudah ditekan */
+  .btn-download {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 1rem;
+    justify-content: center;
+  }
+}
+
