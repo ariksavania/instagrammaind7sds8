@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>instaDL - Pengunduh Instagram Premium | Simpan Video, Foto, Reels & Stories</title>
+  <meta name="description" content="Unduh Video, Foto, Reels, Stories, dan IGTV Instagram dengan kualitas asli. Alat pengunduh Instagram terbaik, cepat, dan aman dengan antarmuka mewah.">
+  <meta name="keywords" content="pengunduh instagram, unduh video instagram, pengunduh reels, pengunduh story, unduh igtv, unduh foto instagram, simpan postingan instagram, viewer story anonim">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://instadl.app/">
+  <meta property="og:title" content="instaDL - Pengunduh Instagram Premium">
+  <meta property="og:description" content="Unduh media Instagram dalam kualitas asli. Cepat, privasi aman, dan lancar di semua perangkat.">
+  <meta property="og:image" content="assets/og-preview.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Critical utility — controls show/hide via JavaScript */
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <!-- Background Gradients -->
+  <div class="bg-gradient-glow bg-glow-1"></div>
+  <div class="bg-gradient-glow bg-glow-2"></div>
+  <div class="bg-gradient-glow bg-glow-3"></div>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="container header-container">
+      <a href="#" class="logo-area">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span class="logo-text">insta<span class="highlight">DL</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#downloader" class="nav-link active" data-translate="nav_downloader">Pengunduh</a>
+        <a href="#features" class="nav-link" data-translate="nav_features">Fitur</a>
+        <a href="#how-to" class="nav-link" data-translate="nav_how_to">Cara Kerja</a>
+        <a href="#faq" class="nav-link" data-translate="nav_faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-selector">
+          <button class="lang-btn active" data-lang="id">ID</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <!-- Hero / Downloader Section -->
+    <section id="downloader" class="hero-section">
+      <div class="container hero-container">
+        <div class="badge-container">
+          <span class="badge-premium">
+            <span class="badge-dot"></span> <span data-translate="hero_badge">Ultra-Speed CDN Aktif</span>
+          </span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span data-translate="hero_title">Instagram Downloader</span>
+        </h1>
+        <p class="hero-subtitle" data-translate="hero_subtitle">
+          Simpan Reels, Video, Foto, Stories, dan Galeri dalam kualitas asli. Privasi mutlak. Tanpa perlu registrasi.
+        </p>
+
+        <!-- Downloader Container -->
+        <div class="downloader-card-wrapper">
+          <!-- Category Tabs -->
+          <div class="downloader-tabs">
+            <button class="tab-btn active" data-type="all">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              <span data-translate="tab_all">Semua-dalam-Satu</span>
+            </button>
+            <button class="tab-btn" data-type="video">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+              <span data-translate="tab_video">Video</span>
+            </button>
+            <button class="tab-btn" data-type="photo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span data-translate="tab_photo">Foto</span>
+            </button>
+            <button class="tab-btn" data-type="reels">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+              <span data-translate="tab_reels">Reels</span>
+            </button>
+            <button class="tab-btn" data-type="story">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+              <span data-translate="tab_story">Story</span>
+            </button>
+          </div>
+
+          <!-- Input Bar -->
+          <div class="downloader-input-container">
+            <div class="input-glow-border"></div>
+            <div class="input-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+            </div>
+            
+            <input type="text" id="url-input" class="url-input" placeholder="Tempel tautan Instagram di sini (contoh: https://instagram.com/reel/...)" autocomplete="off">
+            
+            <div class="input-controls">
+              <button class="ctrl-btn" id="btn-paste" title="Tempel Tautan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                </svg>
+                <span data-translate="btn_paste">Tempel</span>
+              </button>
+              <button class="ctrl-btn hidden" id="btn-clear" title="Bersihkan Kolom">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+            </div>
+
+            <button class="btn btn-download" id="btn-download">
+              <span class="btn-text" data-translate="btn_download">Unduh</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="icon-download">
+                <polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/>
+              </svg>
+            </button>
+          </div>
+          
+          <p class="terms-helper">
+            <span data-translate="terms_helper_1">Dengan menggunakan layanan kami, Anda menyetujui</span> 
+            <a href="#terms" class="modal-link" data-translate="terms_helper_2">Ketentuan Layanan</a> 
+            <span data-translate="terms_helper_3">kami.</span>
+          </p>
+        </div>
+
+        <!-- Processing Console Terminal (Simulated) -->
+        <div class="processing-console hidden" id="processing-console">
+          <div class="console-header">
+            <div class="console-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="console-title">Decryption Engine v4.2</div>
+            <div class="console-badge" data-translate="console_active">ACTIVE</div>
+          </div>
+          <div class="console-body" id="console-logs">
+            <!-- Simulated Logs get injected here -->
+          </div>
+          <div class="console-progress-container">
+            <div class="console-progress-bar" id="console-progress"></div>
+          </div>
+        </div>
+
+        <!-- Download Results Container -->
+        <div class="download-results-container hidden" id="download-results">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Bookmarklet Info -->
+    <section class="bookmarklet-section">
+      <div class="container">
+        <div class="bookmarklet-banner">
+          <div class="bookmarklet-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+            </svg>
+          </div>
+          <div class="bookmarklet-text">
+            <h4 data-translate="bookmark_title">Trik Alamat Unduh Super Cepat</h4>
+            <p data-translate="bookmark_desc">Lewati kunjungan web! Cukup tambahkan <span class="code-badge">l-d.app/</span> sebelum URL Instagram apa pun di bilah alamat browser Anda (contoh: <span class="glow-span">l-d.app/https://instagram.com/p/...</span>) dan tekan Enter untuk mengunduh secara instan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Features -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span data-translate="feat_sec_title_1">Didesain untuk Performa</span> 
+            <span class="gradient-text" data-translate="feat_sec_title_2">Maksimal</span>
+          </h2>
+          <p class="section-subtitle" data-translate="feat_sec_subtitle">Rasakan mesin pengunduh yang dibangun ulang dari awal untuk kecepatan, kualitas, dan gaya.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card glass-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 data-translate="feat_1_title">Dekripsi Cloud Kecepatan Tinggi</h3>
+            <p data-translate="feat_1_desc">Script parsing server-less kami mendekripsi aliran konten Instagram secara real-time, memberikan kecepatan hingga 1Gbps.</p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="feature-card glass-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 data-translate="feat_2_title">Tanpa Log Data & Privasi Aman</h3>
+            <p data-translate="feat_2_desc">Kami menghormati privasi Anda. Tidak perlu akun, log tidak disimpan, dan URL segera dihapus setelah diproses.</p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="feature-card glass-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3 data-translate="feat_3_title">Kualitas Media Asli Tanpa Kompresi</h3>
+            <p data-translate="feat_3_desc">Dapatkan file CDN mentah langsung dengan resolusi asli (Foto hingga 1080p, Video hingga 4K UHD), tanpa kompresi sama sekali.</p>
+          </div>
+          <!-- Feature 4 -->
+          <div class="feature-card glass-card">
+            <div class="feature-card-glow"></div>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 data-translate="feat_4_title">Optimasi Lintas Platform</h3>
+            <p data-translate="feat_4_desc">Dioptimalkan sepenuhnya untuk Safari, Chrome, Edge, dan webview bawaan iOS/Android. Tanpa perlu install aplikasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Download -->
+    <section id="how-to" class="guide-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span data-translate="guide_sec_title_1">Proses Mudah</span> 
+            <span class="gradient-text" data-translate="guide_sec_title_2">3 Langkah</span>
+          </h2>
+          <p class="section-subtitle" data-translate="guide_sec_subtitle">Simpan konten ke komputer, tablet, atau ponsel Anda dalam hitungan detik.</p>
+        </div>
+
+        <div class="guide-timeline">
+          <!-- Step 1 -->
+          <div class="guide-step-card glass-card" data-step="1">
+            <div class="step-num">01</div>
+            <h3 data-translate="guide_step_1_title">Salin Tautan</h3>
+            <p data-translate="guide_step_1_desc">Buka Instagram dan salin URL Foto, Video, Reel, Story, atau Galeri dari bilah alamat atau ikon bagikan.</p>
+            <div class="step-visual">
+              <div class="mock-browser">
+                <div class="mock-browser-bar">
+                  <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+                  <div class="mock-address">instagram.com/reel/C7xY9...</div>
+                </div>
+                <div class="mock-content">
+                  <div class="mock-image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="heart-pulse"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="guide-step-card glass-card" data-step="2">
+            <div class="step-num">02</div>
+            <h3 data-translate="guide_step_2_title">Tempel ke instaDL</h3>
+            <p data-translate="guide_step_2_desc">Tempel tautan yang disalin ke kolom input di atas, pilih kategori, dan klik tombol Unduh.</p>
+            <div class="step-visual">
+              <div class="mock-input-bar">
+                <div class="mock-input-field">https://instagram.com/reel/C7xY9...</div>
+                <div class="mock-input-btn" data-translate="mock_download">Download</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="guide-step-card glass-card" data-step="3">
+            <div class="step-num">03</div>
+            <h3 data-translate="guide_step_3_title">Simpan ke Perangkat</h3>
+            <p data-translate="guide_step_3_desc">Mesin kami memproses tautan, mengambil data langsung dari CDN, dan menghasilkan tombol unduh secara instan.</p>
+            <div class="step-visual">
+              <div class="mock-download-card">
+                <div class="mock-dl-progress">
+                  <div class="mock-dl-fill"></div>
+                </div>
+                <div class="mock-dl-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span data-translate="mock_save_media">Save Media</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span data-translate="faq_sec_title_1">Pertanyaan yang</span> 
+            <span class="gradient-text" data-translate="faq_sec_title_2">Sering Diajukan</span>
+          </h2>
+          <p class="section-subtitle" data-translate="faq_sec_subtitle">Semua hal yang perlu Anda ketahui tentang instaDL. Jawaban jelas untuk pertanyaan umum.</p>
+        </div>
+
+        <div class="faq-accordion-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item glass-card">
+            <button class="faq-trigger">
+              <span data-translate="faq_1_q">Apa itu instaDL dan bagaimana cara memproses media?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_1_a">instaDL adalah alat berbasis browser premium yang terhubung secara aman ke server Instagram untuk mengekstrak dan memproses file media mentah berkualitas tinggi (video, foto, reels, dan stories). Alat ini melewati batas pemutar standar dan menyediakan tautan unduh bersih untuk menyimpan file langsung ke perangkat Anda.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item glass-card">
+            <button class="faq-trigger">
+              <span data-translate="faq_2_q">Apakah ada batasan unduhan harian atau biaya pendaftaran?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_2_a">Tidak. instaDL 100% gratis dan tidak memberlakukan batasan harian untuk mengunduh. Anda dapat menyimpan video dan foto sebanyak yang Anda suka tanpa perlu mendaftar atau memasukkan detail akun.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item glass-card">
+            <button class="faq-trigger">
+              <span data-translate="faq_3_q">Apakah saya bisa mengunduh media dari akun privat?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_3_a">instaDL menghormati pengaturan pengguna. Karena file dari akun privat dilindungi secara ketat oleh izin API dan cookie Instagram, instaDL hanya dapat mengunduh konten dari profil publik. Jika Anda bisa melihat video tersebut di tab browser tanpa login, instaDL bisa memprosesnya.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item glass-card">
+            <button class="faq-trigger">
+              <span data-translate="faq_4_q">Format dan kualitas apa saja yang disediakan instaDL?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_4_a">Kami mengambil aset media mentah tanpa kompresi. Foto dikirimkan dalam format JPG resolusi tinggi hingga 1080p. Video disimpan dalam format MP4 standar hingga HD 1080p, mempertahankan kejelasan audio asli dan frame video persis seperti yang diunggah oleh pembuat konten.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item glass-card">
+            <button class="faq-trigger">
+              <span data-translate="faq_5_q">Di mana file unduhan saya disimpan di perangkat saya?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="faq-arrow"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_5_a">Pada komputer (macOS, Windows, Linux), file akan tersimpan di folder 'Downloads' default browser Anda. Pada perangkat seluler (iOS, Android), file diunduh ke daftar unduhan browser atau aplikasi File sistem, yang akan otomatis memasukkannya ke galeri foto Anda.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toast-container"></div>
+
+
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <a href="#" class="logo-area">
+          <div class="logo-icon small">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="logo-text">insta<span class="highlight">DL</span></span>
+        </a>
+        <p class="footer-desc" data-translate="footer_desc">Menyediakan alat ekstraksi media premium dan responsif sejak 2026. Cepat, anonim, dan andal.</p>
+        <p class="copyright">&copy; 2026 instaDL - Indralana</p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="link-group">
+          <h5 data-translate="footer_links_tools">Alat</h5>
+          <a href="#downloader" data-type="video" class="footer-nav-link" data-translate="footer_tool_video">Pengunduh Video</a>
+          <a href="#downloader" data-type="photo" class="footer-nav-link" data-translate="footer_tool_photo">Pengunduh Foto</a>
+          <a href="#downloader" data-type="reels" class="footer-nav-link" data-translate="footer_tool_reels">Pengunduh Reels</a>
+          <a href="#downloader" data-type="story" class="footer-nav-link" data-translate="footer_tool_story">Pengunduh Story</a>
+        </div>
+        <div class="link-group">
+          <h5 data-translate="footer_links_legal">Hukum</h5>
+          <a href="#" class="footer-link" data-translate="footer_legal_terms">Ketentuan Layanan</a>
+          <a href="#" class="footer-link" data-translate="footer_legal_privacy">Kebijakan Privasi</a>
+          <a href="#" class="footer-link" data-translate="footer_legal_contact">Hubungi Dukungan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script data-cfasync="false" src="app.js"></script>
+</body>
+</html>
