@@ -330,8 +330,6 @@
           urlInput.value = text.trim();
           toggleClear();
           showToast(dict.toast_copied, 'success');
-        } else {
-          showToast(dict.toast_copied_empty, 'error');
         }
       }).catch(function () {
         showToast(dict.toast_paste_fallback, 'error');
