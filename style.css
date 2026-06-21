@@ -1280,13 +1280,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .toast-icon {
-  color: var(--cyan-neon);
-  flex-shrink: 0;
-}
-
-.toast-icon svg {
   width: 20px;
   height: 20px;
+  color: var(--cyan-neon);
+  flex-shrink: 0;
 }
 
 .toast-message {
